@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+.container
+{
+    background-color: white;
+    border-radius: 10px;
+    height: 400px;
+    width: 225px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    @media (min-width:1440px) {
+        flex-direction: row;
+        height: 400px;
+        width: 500px;
+    }
+    & > .img
+    {
+        width: 100%;
+        object-fit: fill;
+        height: 175px;
+        @media (min-width:1440px) {
+            height: 100%;
+            width: 50%;
+        }
+    }
+    & > .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        @media (min-width:1440px) {
+            gap: 10px;
+        }
+    & > .buy
+    {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        @media (min-width:1440px) {
+            gap: 20px;
+        }
+        & > .prices{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        & > .price
+        {
+            color: hsl(158, 36%, 37%);
+            font-family: 'Fraunces', serif;
+            font-size: 20px;
+            text-align: start;
+            padding:0 15px;
+            @media (min-width:1440px) {
+                font-size: 26px;
+            }
+        }
+        & > .sprice
+        {
+            font-family: 'Fraunces', serif;
+            font-size: 10px;
+            color: hsl(228, 12%, 48%);
+            text-decoration: line-through;
+            @media (min-width:1440px) {
+                font-size: 13px;
+            }
+        }
+    }
+    & > .button
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &  .button-context
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            & > .button-label
+            {
+                font-size: 10px;
+                @media (min-width:1440px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    }
+    & > .content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+            padding: 15px;
+        gap: 7.1px;
+        @media (min-width:1440px) {
+            gap: 20px;
+
+        }
+        & >.mini-title
+        {
+            letter-spacing: 2px;
+            font-size: 10.1px;
+            color: hsl(228, 12%, 48%);
+            font-family: 'Montserrat', sans-serif;
+            @media (min-width:1440px) {
+                letter-spacing: 4px;
+                font-size: 11px
+            }
+        }
+        & >.title
+        {
+            font-family: 'Fraunces', serif;
+            font-size: 19.1px;
+            @media (min-width:1440px) {
+                font-size: 26px;
+                line-height: 26px;
+            }
+        }
+        & > .desc
+        {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8.6px;
+            color: hsl(228, 12%, 48%);
+            line-height: 15px;
+            @media (min-width:1440px) {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+}
